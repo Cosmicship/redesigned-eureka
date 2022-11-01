@@ -1,1 +1,1 @@
-# redesigned-eureka
+# eureka
