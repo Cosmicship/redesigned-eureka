@@ -1,0 +1,10 @@
+money = int(input("Введите сумму: "))
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+values_list = list((per_cent.values ()))
+
+	a, b, c, d = (values_list[0]), (values_list[1]), (values_list[2]), (values_list[3])
+	deposit_1, deposit_2, deposit_3, deposit_4 = money*(a/100), money*(b/100), money*(c/100), money*(d/100)
+	deposit_list = [deposit_1, deposit_2, deposit_3, deposit_4]
+	deposit = list(map(round, deposit_list))
+
+print(deposit, '\nМаксимальная сумма, которую вы можете заработать: ', max(deposit))
